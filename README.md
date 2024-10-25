@@ -1,6 +1,6 @@
 APS - Atividade Prática Supervisionada
 
-O objetivo deste trabalho  ́e a utilização dos conceitos de threads e mutex em linguagem C para a solução do problema Jantar dos Filósofos. Abaixo é apresentado a descrição do problema:
+O objetivo deste trabalho é a utilização dos conceitos de threads e mutex em linguagem C para a solução do problema Jantar dos Filósofos. Abaixo é apresentado a descrição do problema:
 Cinco filósofos estão sentados à volta de uma mesa circular. Cada filósofo passa seu tempo pensando e comendo. Para comer, cada filósofo precisa de dois talheres. Na mesa, há cinco talheres disponíveis, onde para 
 cada filósofo temos um talher à esquerda e outro à direita. Os filósofos podem pensar a qualquer momento, mas só podem comer quando tiverem dois talheres (esquerda e direita).
 
