@@ -53,9 +53,19 @@ int main() {
         pthread_create(&filosofos[i], NULL, filosofo, &ids[i]);
     }
 
-    // Mantém o main ativo
-    while (1) {
-        sleep(1);
+    // // Mantém o main ativo
+    // while (1) {
+    //     sleep(1);
+    // }
+
+    // Aguarda as threads (boa prática apenas, já que os threads não terminam)
+    for (int i = 0; i < NUM_FILOSOFOS; i++) {
+        pthread_join(filosofos[i], NULL);
+    }
+
+    // Libera os mutexes (boa prática, não tem término de mutexes)
+    for (int i = 0; i < NUM_FILOSOFOS; i++) {
+        pthread_mutex_destroy(&talheres[i]);
     }
 
     return 0;
